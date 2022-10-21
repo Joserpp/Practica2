@@ -8,6 +8,7 @@
 
 #include <queue>
 
+using namespace std;
 
 struct element{
     int value;
