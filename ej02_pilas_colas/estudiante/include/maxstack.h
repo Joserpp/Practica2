@@ -16,21 +16,21 @@ struct element{
 };
 
 
-class Pila{
+class MaxPila{
     private:
         queue<element> datos;
 
     public:
         
-    void push (int a);
+        void push (int a);
 
-    void pop ();
+        void pop ();
 
-    int size();
+        int size();
 
-    element top();
+        element top();
 
-    bool empty() const;
+        bool empty() const;
 };
 
 
