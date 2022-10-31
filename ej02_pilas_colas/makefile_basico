@@ -1,0 +1,33 @@
+HOME = .
+BIN = $(HOME)/estudiante/bin
+SRC = $(HOME)/estudiante/src
+INCLUDE = $(HOME)/estudiante/include
+LIB = $(HOME)/estudiante/lib
+OBJ = $(HOME)/estudiante/obj
+all: $(BIN)/usopilas_max fin
+#......................Ejecutables
+$(BIN)/usopilas_max : $(SRC)/pilas_max.cpp $(SRC)/maxstack.cpp $(INCLUDE)/maxstack.h
+@echo
+@echo Creando el ejecutable: uso_pila_max
+@echo
+g++ -o $(BIN)/usopilas_max $(SRC)/pilas_max.cpp $(SRC)/maxstack.cpp $(INCLUDE)/maxstack.h
+#...................... OBJETOS
+#...................... BIBLIOTECAS
+#......................Limpiar
+clean :
+@echo
+@echo Borrando objetos
+-rm obj/*
+@echo
+mr.proper : clean
+@echo
+@echo Borrando ejecutables
+-rm bin/*
+@echo
+@echo Borrando bibliotecas
+-rm lib/*
+#..Extra
+fin:
+@echo
+@echo Terminado
+@echo

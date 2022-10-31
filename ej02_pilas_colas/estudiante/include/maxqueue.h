@@ -7,12 +7,20 @@
 #define _MAXQUEUE_
 
 #include <stack>
-
+#include <iostream>
 using namespace std;
 
 struct element{
     int value;
     int max_value;
+
+    friend ostream & operator <<(ostream & p, const element & numero){
+
+        p<<numero.value<<","<<numero.max_value;
+
+        return p;
+
+}
 };
 
 
@@ -31,6 +39,7 @@ class MaxCola{
     int size();
 
     bool empty() const;
+
 };
 
 

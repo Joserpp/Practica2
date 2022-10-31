@@ -5,7 +5,7 @@
  */
 
 #include "maxstack.h"
-
+#include <iostream>
 void MaxPila::push(int numero){
     element nuevo_num;
     nuevo_num.value=numero;
