@@ -6,7 +6,7 @@
 
 #include "maxstack.h"
 
-void Pila::push(int numero){
+void MaxPila::push(int numero){
     element nuevo_num;
     nuevo_num.value=numero;
 
@@ -38,19 +38,19 @@ void Pila::push(int numero){
 
 }
 
-void Pila::pop(){
+void MaxPila::pop(){
 
     datos.pop();
 
 }
 
-int Pila::size(){
+int MaxPila::size(){
     return datos.size();
 }
 
-element Pila::top(){
+element MaxPila::top(){
     return datos.front();
 }
-bool Pila::empty() const{
+bool MaxPila::empty() const{
     return datos.empty();
 }
