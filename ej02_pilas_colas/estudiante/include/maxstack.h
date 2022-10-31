@@ -23,14 +23,6 @@ struct element{
     }
 };
 
-  ostream & operator <<(ostream & p, const element & numero){
-
-        p<<numero.value<<","<<numero.max_value;
-
-        return p;
-
-}
-
 class MaxPila{
     private:
         queue<element> datos;
