@@ -14,15 +14,14 @@ struct element{
     int value;
     int max_value;
 
-    friend ostream & operator <<(ostream & p, const element & numero){
+};
+  ostream & operator <<(ostream & p, const element & numero){
 
         p<<numero.value<<","<<numero.max_value;
 
         return p;
 
 }
-};
-
 
 class MaxCola{
     private:
