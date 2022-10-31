@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
 
      for(int i = 1; i < argc; i++){
          if (argv[i][0] == '.'){
-             cout<< stack.top() << endl;
+             cout << stack.top() << endl;
              stack.pop();
          } else {
              stack.push(atoi(argv[i]));
