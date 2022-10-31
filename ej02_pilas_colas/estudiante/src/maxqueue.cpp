@@ -4,7 +4,7 @@
  * @author
  */
 #include "maxqueue.h"
-
+#include <iostream>
 /**
 
 **/
@@ -15,7 +15,17 @@ void MaxCola::push(int numero){
     stack<element> datos2;
 
     while(!datos.empty()){
-        
+        datos2.push(datos.top());
+        datos.pop();
+    }
+
+    datos2.push(num);
+
+    while(!datos2.empty()){
+        datos.push(datos2.top());
+        if(datos.top().max_value<num.max_value)
+            datos.top().max_value=num.max_value;
+        datos2.pop();
     }
 }
 
