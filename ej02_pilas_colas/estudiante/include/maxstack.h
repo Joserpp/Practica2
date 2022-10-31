@@ -13,6 +13,14 @@ using namespace std;
 struct element{
     int value;
     int max_value;
+    
+    friend ostream & operator <<(ostream & p, const element & numero){
+
+        p<<numero.value<<","<<numero.max_value;
+
+    return p;
+
+    }
 };
 
   ostream & operator <<(ostream & p, const element & numero){
@@ -38,14 +46,6 @@ class MaxPila{
         element top();
 
         bool empty() const;
-
-       friend ostream & operator <<(ostream & p, const element & numero){
-
-    p<<numero.value<<","<<numero.max_value;
-
-    return p;
-
-}
 };
 
 
