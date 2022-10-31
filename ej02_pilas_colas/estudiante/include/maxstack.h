@@ -7,7 +7,7 @@
 #define _MAXSTACK_
 
 #include <queue>
-
+#include <iostream>
 using namespace std;
 
 struct element{

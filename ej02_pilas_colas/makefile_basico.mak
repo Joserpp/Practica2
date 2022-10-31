@@ -8,12 +8,13 @@ all: $(BIN)/usopilas_max
 #......................Ejecutables
 $(BIN)/usopilas_max : \
 	$(SRC)/pilas_max.cpp \
+	$(SRC)/maxstack.cpp \
 	$(INCLUDE)/maxstack.h
 
 	@echo
 	@echo Creando el ejecutable: uso_pila_max
 	@echo
-	g++ -o $(BIN)/usopilas_max $(SRC)/pilas_max.cpp $(INCLUDE)/maxstack.h
+	g++ -o $(BIN)/usopilas_max $(SRC)/pilas_max.cpp $(SRC)/maxstack.cpp $(INCLUDE)/maxstack.h
 
 
 #...................... OBJETOS
