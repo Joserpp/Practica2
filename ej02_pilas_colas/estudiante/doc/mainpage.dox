@@ -1,11 +1,99 @@
 /*! \mainpage Título de la página principal
 
 # Introducción
+Práctica 2 Estructura de Datos
+
+Implementación de 2 TDA MaxCola y MaxPila que almacenaran una serie de datos siguiendo las estructuras de una pila y una cola
+Adicionalmente nos permitira almacenar el valor máximo contenido en la estructura.
 
 A RELLENAR POR EL ESTUDIANTE
 
 # Ejecutables
 
-A RELLENAR POR EL ESTUDIANTE
+# Struct element
 
+@brief Struct con dos atributos value y max_value. 
+-> value almacena un valor.
+-> max_value guarda el máximo de los valores que hay.
+
+El método implementado:
+@brief sobrecarga del operador << para sacar por pantalla los valores
+@param numero flujo de salida
+@param p representa la instancia que se saca por pantalla
+@return se devulve el flujo de salida p.
+
+@image html pila.png
+
+# Clase MaxPila
+
+Nos permitirá crear instancias en las cuales almacenaremos una serie de datos siguiendo la estructura de una pila sin embargo,
+internamente tendrá una estructura basada en una cola
+
+Los métodos implementados en esta clase son los siguientes:
+
+##push
+
+@brief Pone en la última posición de la pila una instancia de tipo element
+@param a es el valor que se va almacenar en la última posición de la pila
+pudiendo ser el máximo
+
+       
+##pop
+
+@brief Elimina el último elemento introducido en la pila
+
+##size
+
+@brief Permite saber el tamaño de la pila (número total de elementos) 
+@return devulve el tamaño de la pila en el momento que llamamos a la función
+
+##top
+
+@brief Permite conocer el último elemento almacenado de la pila
+@return una instancia de tipo elemento con los valores.
+
+##empty
+
+@brief Nos dice con un bool si la pila está vacía o no.
+@return true si la pila está vacía.
+@return false si la pila no está vacía.
+
+-----------------------------------------------------------------------------------------------------------
+
+@image html cola.png
+# Clase MaxCola
+
+Nos permitira crear instancias donde almacenaremos valores siguiendo la estructura de una cola, sin embargo 
+internamente seguirá una estructura basada en una pila 
+ 
+Para poder usar el TDA MaxCola es necesario incluir el fichero #include <maxqueue.h>.
+
+## pop
+
+@brief Elimina el primer elemento introducido en la cola
+
+##size
+
+@brief Devuelve el tamaño de la cola
+@return Número de elementos contenidos en la cola
+
+##empty
+
+@brief Informa si la cola se encuentra vacia o no
+@return true-> si la pila se encuentra vacia
+@return false-> si la pila contiene algun elemento
+
+##push
+
+@biref Almacena una nueva instancia de tipo element en la última posición de la cola
+@param valor es el valor que se va a introducir en la cola, si valor es 
+mayor que todos los introducidos con anterioridad se convertirá en el nuevo máximo
+
+##front
+
+@brief Devuelve el primer elemento almacenado en la cola
+@return Una instancia de tipo element formado por el valor que más tiempo lleva en la cola junto 
+al valor actual más grande contenido en la cola 
 */
+
+

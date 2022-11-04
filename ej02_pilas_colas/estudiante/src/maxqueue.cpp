@@ -7,7 +7,7 @@
 #include <iostream>
 /**
 
-**/
+ */
 void MaxCola::push(int numero){
     element num;
     num.value = numero;
